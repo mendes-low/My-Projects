@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Интернет-магазин ALSER.kz</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <header class="header_phone">
+            <div class="header_phone-container">
+                <div class="header_phone-left">
+                    <input id="menu-toggle" type="checkbox">
+                    <label for="menu-toggle" class="menu-btn">
+                        <span></span>
+                    </label>
+                    <ul class="menu-list">
+                        <a href="index.html" target="_blank">
+                            <img src="assets/images/header-img/Logo.svg" style="padding: 16px 80px;">
+                        </a>
+            
+                        <div id="menu-list_actions">
+                            <li>
+                                <a href="">
+                                    <ion-icon name="grid-outline"></ion-icon>
+                                    Каталог
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                    Избранные
+                                </a>
+                            </li>
+                    
+                            <li>
+                                <a href="">
+                                    <ion-icon name="pricetag-outline"></ion-icon>
+                                    Акции
+                                </a>
+                            </li>
+                    
+                            <li>
+                                <a href="">
+                                    <ion-icon name="storefront-outline"></ion-icon>
+                                    Магазины
+                                </a>
+                            </li>
+                    
+                            <li>
+                                <a href="">
+                                    <ion-icon name="briefcase-outline"></ion-icon>
+                                    Сервис центры
+                                </a>
+                            </li>
+                        </div>
+                        
+                        <div id="menu-list_others">
+                            <p>Ваш город</p>
+                            <li>
+                                <a href="">
+                                    <ion-icon name="location-outline" style="color: hsl(151, 100%, 32%);"></ion-icon>
+                                    Алматы
+                                </a>
+                            </li>
+                        
+                            <p>Помощь</p>
+                            <li>
+                                <a href="">
+                                    <ion-icon name="call-outline" style="color: hsl(151, 100%, 32%);"></ion-icon>
+                                    3003 08:00-22:00
+                                </a>
+                            </li>
+                    
+                            <li>
+                                <a href="">
+                                    <ion-icon name="help-circle-outline" style="color: hsl(151, 100%, 32%);"></ion-icon>
+                                    ALSER.kz-гид
+                                </a>
+                            </li>
+                    
+                            <li>
+                                <a href="">
+                                    <ion-icon name="chatbox-ellipses-outline" style="color: hsl(151, 100%, 32%);"></ion-icon>
+                                    Служба поддержки
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+
+                    <a href="index.html" target="_blank">
+                        <img src="assets/images/header-img/Logo.svg" style="width: 55%;">
+                    </a>
+                </div>
+        
+                <div class="header_phone-right">
+                    <div class="language">
+                        <ion-icon name="earth-outline" style="color:  hsl(151, 100%, 32%);"></ion-icon>
+                        <p>Русский</p>
+                    </div>
+
+                    <ion-icon name="search-outline" style="font-size: larger;"></ion-icon>
+                </div>
+            </div>
+        </header>
+
+        <header class="header-desktop">
+            <div class="header-desktop_container">
+                <div class="header-top">
+                    <div class="header-top_nagivation">
+                        <a href="" style="width: 150px;">
+                            <ion-icon name="help-circle-outline" style="color: hsl(151, 100%, 32%); font-size: 20px;"></ion-icon>
+                            ALSER.kz-гид
+                        </a>
+    
+                        <a href="" style="color: hsl(0, 0%, 60%);">
+                            Магазины
+                        </a>
+    
+                        <a href="" style="color: hsl(0, 0%, 60%); width: 150px;">
+                            Статус в сервисе
+                        </a>
+
+                        <a href="" style="color: hsl(14, 100%, 57%);">
+                            <ion-icon name="pricetag-outline"></ion-icon>
+                            Акции
+                        </a>
+                    </div>
+
+                    <div class="header-top_actions">
+                        <a href="#">
+                            <ion-icon name="earth-outline" style="color:  hsl(151, 100%, 32%);"></ion-icon>
+                            Русский
+                        </a>
+    
+                        <a href="">
+                            <ion-icon name="location-outline" style="color: hsl(151, 100%, 32%);"></ion-icon>
+                            Алматы
+                        </a>
+    
+                        <a href="" style="width: 160px;">
+                            <ion-icon name="call-outline" style="color: hsl(151, 100%, 32%);"></ion-icon>
+                            3003 <span></span> 08:00-22:00
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header-main">
+                    <div class="header-main_logo">
+                        <a href="index.html" target="_blank">
+                            <img src="assets/images/header-img/Logo.svg" style="width: 45%;">
+                            <img src="assets/images/header-img/euronics-header.svg" style="width: 15%;">
+                        </a>
+                    </div>
+
+                    <div class="header-main_search">
+                        <input type="search" id="search" placeholder="Найти товар"> 
+                        <button>
+                            <ion-icon name="search-outline" style="font-size: 20px;"></ion-icon>
+                        </button> 
+                    </div>
+
+                    <div class="header-main_actions">
+                        <a href=""><ion-icon style="font-size: 27px; color: hsl(151, 100%, 32%)" name="grid-outline"></ion-icon></a>
+                        <a href=""><ion-icon style="font-size: 27px; color: hsl(151, 100%, 32%)" name="heart-outline"></ion-icon></a>
+                        <a href=""><ion-icon style="font-size: 27px; color: hsl(151, 100%, 32%)" name="cart-outline"></ion-icon></a>
+                        <a href=""><ion-icon style="font-size: 27px; color: hsl(151, 100%, 32%)" name="person-circle-outline"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </header>
+
+    <section class="popular-categories">
+        <h1>Популярные категории</h1>
+        <div class="popular-categories-cards">
+
+            <a href="">
+                <div class="samsung-category category">
+                    <div class="category-img">
+                        <img src="assets/images/popular-categories-img/smartfony-samsung1681465595-removebg-preview.png">
+                    </div>
+    
+                    <div class="categoty-text">
+                        <a href="">Смартфоны Samsung</a>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="">
+                <div class="freezers-category category">
+                    <div class="category-img">
+                        <img src="assets/images/popular-categories-img/morozil-nye-kamery1656328240-removebg-preview.png">
+                    </div>
+    
+                    <div class="categoty-text">
+                        <a href="">Морозильные камеры</a>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="">
+                <div class="TV-category category">
+                    <div class="category-img">
+                        <img src="assets/images/popular-categories-img/vse-televizory1656320154-removebg-preview.png">
+                    </div>
+    
+                    <div class="categoty-text">
+                        <a href="">Все телевизоры</a>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="">
+                <div class="laptop-category category">
+                    <div class="category-img laptop-category-img">
+                        <img src="assets/images/popular-categories-img/vse-noutbuki1656332828-removebg-preview.png">
+                    </div>
+    
+                    <div class="categoty-text">
+                        <a href="">Все ноутбуки</a>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="">
+                <div class="water heaters-category category">
+                    <div class="category-img">
+                        <img src="assets/images/popular-categories-img/vodonagrevateli1656329156-removebg-preview.png">
+                    </div>
+    
+                    <div class="categoty-text">
+                        <a href="">Водонагреватели</a>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="">
+                <div class="washing machines-category category">
+                    <div class="category-img">
+                        <img src="assets/images/popular-categories-img/vse-stiralnie-masini1656328602-removebg-preview.png">
+                    </div>
+    
+                    <div class="categoty-text">
+                        <a href="">Стиральные машины</a>
+                    </div>
+                </div>
+            </a>
+        </div>   
+
+    </section>
+
+
+    <section class="banners">
+        <div class="banners-container">
+            <div class="banner">
+                <a href="#">
+                    <img src="assets/images/banners-img/1.webp">
+                </a>
+            </div>
+    
+            <div class="banner">
+                <a href="#">
+                    <img src="assets/images/banners-img/2.webp">
+                </a>
+            </div>
+    
+            <div class="banner">
+                <a href="#">
+                    <img src="assets/images/banners-img/3.webp">
+                </a>
+            </div>
+    
+            <div class="banner">
+                <a href="#">
+                    <img src="assets/images/banners-img/4.webp">
+                </a>
+            </div>
+    
+            <div class="banner">
+                <a href="#">
+                    <img src="assets/images/banners-img/5.jpg">
+                </a>
+            </div>
+    
+            <div class="banner">
+                <a href="#">
+                    <img src="assets/images/banners-img/6.webp">
+                </a>
+            </div>
+    
+            <div class="banner">
+                <a href="#">
+                    <img src="assets/images/banners-img/7.webp">
+                </a>
+            </div>
+    
+            <div class="banner">
+                <a href="#">
+                    <img src="assets/images/banners-img/8.jpg">
+                </a>
+            </div>
+    
+            <div class="banner">
+                <a href="#">
+                    <img src="assets/images/banners-img/9.webp">
+                </a>
+            </div>
+    
+            <div class="banner">
+                <a href="#">
+                    <img src="assets/images/banners-img/10.jpg">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-cards">
+        <div class="service-cards_container">
+            <a href="" class="service-card">
+                <div class="service-card_img">
+                    <img src="assets/images/service-cards-img/delivery.svg">
+                </div>
+
+                <div class="service-card_word">
+                    Бесплатная доставка
+                </div>
+            </a>
+
+            <a href="" class="service-card">
+                <div class="service-card_img">
+                    <img src="assets/images/service-cards-img/guarantee.svg">
+                </div>
+
+                <div class="service-card_word">
+                    Гарантия качества
+                </div>
+            </a>
+
+            <a href="" class="service-card service-card3">
+                <div class="service-card_img">
+                    <img src="assets/images/service-cards-img/shops.svg">
+                </div>
+
+                <div class="service-card_word">
+                    Наши магазины
+                </div>
+            </a>
+
+            <a href="" class="service-card">
+                <div class="service-card_img">
+                    <img src="assets/images/service-cards-img/bonus.svg">
+                </div>
+
+                <div class="service-card_word">
+                    Программа лояльности
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <main class="main-products main-product-1">
+        <div class="main-products_container">
+            <div class="main-product_name">
+                <div class="name_icon">
+                    <img src="assets/images/main-product-img/newest.svg">
+                    <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Новинки</h2>
+                </div>
+
+                <a href="" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Все
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+            </div>
+
+            <div class="main-product-cards">
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/new-products-img/1-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1420645</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку 3124₸
+                                x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Умная колонка Яндекс.Станция Миди
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                74 990 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/new-products-img/2-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1421708</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку 4787₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Планшет Samsung Galaxy A9 8.7 128GB
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                114 990 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/new-products-img/3-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1421625</span>
+                            </div>
+
+                            <div class="word-orange_text" style="font-size: 15px;">
+                                в рассрочку 8749₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Стиральная машина LG F2J3WS8W
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                209 990 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/new-products-img/4-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1421538</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку 33749₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Телевизор Samsung UE75CU800XCE Smart...
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                809 990 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/new-products-img/5-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1419412</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку 133₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Настольная игра "Соображарий: Улётная...
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                3 200 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <main class="main-products">
+        <div class="main-products_container">
+            <div class="main-product_name">
+                <div class="name_icon">
+                    <img src="assets/images/main-product-img/sale.svg">
+                    <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Распродажа</h2>
+                </div>
+
+                <a href="" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Все
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+            </div>
+
+            <div class="main-product-cards">
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/sale-product-img/1-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1414273</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку 828₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Смарт-часы HUAWEI BAND 8 Midnight Black
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                19 890 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/sale-product-img/2-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1398055</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку  5 832₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Телевизор Xiaomi MI P1 43 Smart 4K UHD
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                139 990 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/sale-product-img/3-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1420645</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку 3 332₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Телевизор Xiaomi MI P1 32 Smart HD
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                79 990 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/sale-product-img/4-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1392706</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку 1 082₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Настенный выключатель двухклавишный Aqara
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                25 990 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/sale-product-img/5-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1396263</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку 1 287₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Электрическая зубная щетка Revyline RL010
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                30 900 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <main class="main-products">
+        <div class="main-products_container">
+            <div class="main-product_name">
+                <div class="name_icon">
+                    <img src="assets/images/main-product-img/hits.svg">
+                    <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Хит продаж</h2>
+                </div>
+
+                <a href="" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Все
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+            </div>
+
+            <div class="main-product-cards">
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/hits-products-img/1-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1413725</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку 541₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Весы Yunmai X M1825 White
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                12 990 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/hits-products-img/2-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1400625</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку 8 749₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Ноутбук Lenovo IdeaPad S300 15IAN8 15,6" FHD
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                209 990 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/hits-products-img/3-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1420645</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку 10 624₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Стиральная машина LG F2J6HSDS
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                254 990 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/hits-products-img/4-removebg-preview (1).png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1397000</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку 416 ₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Смарт-часы Vivo Zeblaze Btalk Green
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                9 990 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="main-product-card">
+                        <div class="card-img">
+                            <img src="assets/images/main-product-img/hits-products-img/5-removebg-preview.png">
+                        </div>
+
+                        <div class="card-word">
+                            <div class="word-code">
+                                <ion-icon name="albums-outline" style="color: hsl(151, 100%, 32%)"></ion-icon>
+                                <span style="color: hsl(0, 0%, 60%);">Код:<span style="color: black;">1386936</span>
+                            </div>
+
+                            <div class="word-orange_text">
+                                в рассрочку 2 916 ₸ x 24
+                            </div>
+
+                            <div class="word-description" style="color: hsl(0, 0%, 60%);">
+                                Смартфон OPPO A17, Lake Blue
+                            </div>
+
+                            <div class="word-price" style="color: black;"> 
+                                69 990 ₸
+                            </div>
+
+                            <button>
+                                <ion-icon name="cart-outline" style="font-size: 15px;"></ion-icon>
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <main class="main-youtube_channel">
+        <div class="youtube_channel-name">
+            <div class="youtube-icon">
+                <img src="assets/images/youtube-channel-img/youtube.svg">
+                Канал Alser
+            </div>
+
+            <a href="#" class="button-subscribe">
+                Подписаться
+            </a>
+        </div>
+        <div class="youtube-cards">
+            <a href="" class="youtube-card">
+                <div class="youtube-card_img">
+                    <img src="assets/images/youtube-channel-img/1.jpg">
+                </div>
+                <div class="youtube-card_words">
+                    <div class="word-name">
+                        НОУТБУК БУДУЩЕГО! Обзор ASUS ROG Zephyrus M16 | ВЕЛИКИЙ!
+                    </div>
+                    <div class="word-date">
+                        23.05.2023
+                    </div>
+                </div>
+            </a>
+            <a href="" class="youtube-card">
+                <div class="youtube-card_img">
+                    <img src="assets/images/youtube-channel-img/2.jpg">
+                </div>
+                <div class="youtube-card_words">
+                    <div class="word-name">
+                        РАЗМЕР имеет значение! TCL 98С735
+                    </div>
+                    <div class="word-date">
+                        30.04.2023
+                    </div>
+                </div>
+            </a>
+            <a href="" class="youtube-card">
+                <div class="youtube-card_img">
+                    <img src="assets/images/youtube-channel-img/3.jpg">
+                </div>
+                <div class="youtube-card_words">
+                    <div class="word-name">
+                        Как улучшить ИНТЕРНЕТ? (Роутер) MESH система от TP Link Deco X2
+                    </div>
+                    <div class="word-date">
+                        26.04.2023
+                    </div>
+                </div>
+            </a>
+            <a href="" class="youtube-card">
+                <div class="youtube-card_img">
+                    <img src="assets/images/youtube-channel-img/4.jpg">
+                </div>
+                <div class="youtube-card_words">
+                    <div class="word-name">
+                        Новый БРЕНДОВЫЙ звук! Marshal Monitor 2 & Major 4
+                    </div>
+                    <div class="word-date">
+                        04.04.2023
+                    </div>
+                </div>
+            </a>
+            <a href="" class="youtube-card">
+                <div class="youtube-card_img">
+                    <img src="assets/images/youtube-channel-img/5.jpg">
+                </div>
+                <div class="youtube-card_words">
+                    <div class="word-name">
+                        Уборка за копейки! Пылесосы Midea MKZ 12K-R и Midea MKZ 15K-B
+                    </div>
+                    <div class="word-date">
+                        28.03.2023
+                    </div>
+                </div>
+            </a>
+            <a href="" class="youtube-card">
+                <div class="youtube-card_img">
+                    <img src="assets/images/youtube-channel-img/6.jpg">
+                </div>
+                <div class="youtube-card_words">
+                    <div class="word-name">
+                        САМЫЙ НЕОБЫЧНЫЙ! ОБЗОР OPPO Reno8 T!
+                    </div>
+                    <div class="word-date">
+                        28.03.2023
+                    </div>
+                </div>
+            </a>
+            <a href="" class="youtube-card">
+                <div class="youtube-card_img">
+                    <img src="assets/images/youtube-channel-img/7.jpg">
+                </div>
+                <div class="youtube-card_words">
+                    <div class="word-name">
+                        Обзор ИГРОВОГО КРЕСЛА Canyon Nightfall GС-7
+                    </div>
+                    <div class="word-date">
+                        28.03.2023
+                    </div>
+                </div>
+            </a>
+            <a href="" class="youtube-card">
+                <div class="youtube-card_img">
+                    <img src="assets/images/youtube-channel-img/1.jpg">
+                </div>
+                <div class="youtube-card_words">
+                    <div class="word-name">
+                        НОВАЯ УЛЬТРА ГАЛАКТИКА - SAMSUNG GALAXY S23 Ultra
+                    </div>
+                    <div class="word-date">
+                        28.03.2023
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+    
+
+    <footer class="footer-top">
+        <div class="footer-top_container">
+            <div class="no-spam_word">
+                Никакого спама, только полезное
+            </div>
+    
+            <div class="email-address">
+                <div class="email-text">
+                    Введите электроную почту
+                </div>
+
+                <div class="email-button">
+                    Подписаться
+                </div>
+            </div>
+
+            <div class="footer-top_actions">
+                <div class="action-logo">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </div>
+
+                <div class="action-logo">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </div>
+
+                <div class="action-logo">
+                    <ion-icon name="logo-tiktok"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer-services">
+                <div class="address-shop">
+                    <ion-icon name="storefront-outline" style="color: hsl(151, 100%, 32%);"></ion-icon>
+                    Адреса магазинов
+                </div>
+    
+                <div class="address-service">
+                    <ion-icon name="briefcase-outline" style="color: hsl(151, 100%, 32%);"></ion-icon>
+                    Адреса сервис центров
+                </div>
+    
+                <div class="phone-number">
+                    <ion-icon name="call-outline" style="color: hsl(151, 100%, 32%);"></ion-icon>
+                    Горячия линия 3003
+                </div>
+            </div>
+
+
+            <div class="footer-description">
+                <div class="company-description">
+                    <img src="assets/images/header-img/Logo.svg">
+                    <div class="company-description_text">
+                        Мы эксперты в мире электроники и технологии, предлагаем сделать правильный выбор по честным ценам с первоклассным сервисом, в любом месте нашей страны.
+                    </div>                
+                </div>
+
+                <div class="company-information">
+                    <div class="company-help">
+                        <h3>Помощь клиентам</h3>
+                        <a href="">Контакты</a>
+                        <a href="">Бонусная программа ABonus</a>
+                        <a href="">Подарочные карты Alser</a>
+                        <a href="">Обмен и возврат без проблем</a>
+                        <a href="">Гарантия и Сервис</a>
+                        <a href="">Договор публичной оферты</a>
+                    </div>
+                </div>
+
+                <div class="company-information">
+                    <div class="company-business">
+                        <h3>Бизнесу</h3>
+                        <a href="">Поставщикам</a>
+                        <a href="">Арендуем помещения под магазины</a>
+                        <a href="">Тендеры</a>
+                        <a href="">Оптовые продажи</a>
+                    </div>
+                </div>
+
+                <div class="company-information">
+                    <div class="company-about_us">
+                        <h3>О нас</h3>
+                        <a href="">О Компании</a>
+                        <a href="">Членство в Euronics</a>
+                        <a href="">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
