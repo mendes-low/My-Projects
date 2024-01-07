@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    background: hsl(0, 0%, 60%);
+}
+
+/* Snow */
+.snow, .snow:after, .snow:before {
+    content: "";
+    position: absolute;
+    top: -650px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: 
+    radial-gradient(4px 4px at 100px 50px, hsl(0, 0%, 100%), transparent),
+    radial-gradient(6px 6px at 200px 150px, hsl(0, 0%, 100%), transparent),
+    radial-gradient(3px 3px at 300px 250px, hsl(0, 0%, 100%), transparent),
+    radial-gradient(4px 4px at 400px 350px, hsl(0, 0%, 100%), transparent),
+    radial-gradient(6px 6px at 500px 100px, hsl(0, 0%, 100%), transparent),
+    radial-gradient(2px 3px at 50px 200px, hsl(0, 0%, 100%), transparent),
+    radial-gradient(4px 4px at 150px 300px, hsl(0, 0%, 100%), transparent),
+    radial-gradient(6px 6px at 250px 400px, hsl(0, 0%, 100%), transparent),
+    radial-gradient(3px 3px at 350px 500px, hsl(0, 0%, 100%), transparent);
+    background-size: 650px 650px;
+    animation: snowfall 3s linear infinite; 
+}
+.snow {
+    filter: drop-shadow(0px 0px 10px white);
+}
+.snow:after {
+    margin-left: -250px;
+    opacity: 0.5;
+    filter: blur(2px) drop-shadow(0px 0px 5px white);
+    animation-direction: reverse;
+    animation-duration: 6s;
+}
+.snow:before {
+    margin-left: -350px;
+    opacity: 0.7;
+    filter: blur(2px) drop-shadow(0px 0px 5px white);
+    animation-direction: reverse;
+    animation-duration: 9s;
+}
+@keyframes snowfall {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(650px);}
+}
+/* Snow */
+
+/* Year_Number */
+.numbers {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+.numbers span:first-child {
+    filter: drop-shadow(0px 0px 15px hsl(0, 0%, 0%));
+}
+.numbers span:nth-child(2) {
+    filter: drop-shadow(0px 0px 15px hsl(0, 0%, 0%));
+}
+.numbers span:nth-child(3) {
+    filter: drop-shadow(0px 0px 15px hsl(0, 0%, 0%));
+}
+.numbers span {
+    display: inline-block;
+    color: hsl(0, 0%, 0%);
+    font-size: 190px;
+    font-weight: bold;
+    transition: 1s;
+    filter: blur(1px);
+}
+.numbers span:last-child {
+    color: hsl(0, 100%, 50%);
+    filter: drop-shadow(0px 0px 20px hsl(0, 100%, 50%));
+}
+.numbers:hover span:last-child {
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(20px);
+}
+.numbers span:nth-child(3):after {
+    content: '4';
+    position: absolute;
+    color: hsl(70, 100%, 50%);
+    transition: 2s;
+    opacity: 0;
+    transform: rotate(-45deg) translateY(200px);
+    filter: blur(20px);
+}
+.numbers:hover span:nth-child(3):after {
+    transform: rotate(0deg) translateY(0px);
+    opacity: 1;
+    filter: blur(0px) drop-shadow(0px 0px 5px hsl(0, 0%, 0%));
+}
+.numbers:hover span {
+    color: hsl(0, 0%, 100%);
+    filter: drop-shadow(5px 5px 5px black);
+}
+/* Year_Number */
+
+/* Container */
+.christmas_tree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 800px;
+    min-height: 800px;
+    width: 100%;
+    background: hsl(187, 83%, 35%);
+}
+/* Container */
+
+/* Tree */
+.tree {
+    position: relative;
+    top: -80px;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(30deg);
+    animation: tree3D 10s linear infinite;
+}
+/* Tree */
+
+/* 3D_Animation */
+@keyframes tree3D {
+    0% {transform: rotateX(-20deg) rotateY(360deg);}
+    100% {transform: rotateX(-20deg) rotateY(0deg);}
+}
+/* 3D_Animation */
+
+/* Star */
+.tree::before {
+    content: "🌟";
+    position: absolute;
+    top: -120px;
+    left: 102px;
+    font-size: 70px;
+    filter: drop-shadow(0px 0px 20px rgb(238, 255, 0));
+}
+.tree::after {
+    content: "🌟";
+    position: absolute;
+    top: -120px;
+    left: 102px;
+    font-size: 70px;
+    transform: rotateY(90deg);
+    filter: drop-shadow(0px 0px 15px rgb(255, 251, 0));
+}
+/* Star */
+
+/* Layers */
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transform: translateY(calc(65px * var(--j)));
+}
+/* Layers */
+
+/* Layer */
+.layer span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(90deg, hsl(120, 44%, 61%), hsl(120, 57%, 62%));
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform-origin: bottom;
+    border-top: 60px ridge hsla(188, 93%, 72%, 0.25);
+    border-right: 130px ridge hsla(188, 93%, 72%, 0.1);
+    border-bottom: 40px inset hsla(188, 93%, 72%, 0.3);
+    border-left: 130px ridge hsla(188, 93%, 72%, 0.1);
+    transform: rotateY(calc(90deg * var(--i))) rotateX(30deg) translateZ(173px);
+}
+/* Layer */
+
+/* Log */
+.log {
+    position: absolute;
+    transform-style: preserve-3d;
+}
+.log span {
+    position: absolute;
+    top: 550px;
+    left: 110px;
+    width: 70px;
+    height: 200px;
+    background: linear-gradient(90deg, #c4461f, #df7214);
+    transform-origin: bottom;
+    border-bottom: 10px solid hsla(0, 0%, 0%, 0.3);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+}
+/* Log */
+
+/* Shadow */
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: hsla(0, 0%, 50%, 2);
+    transform-style: preserve-3d;
+    transform: rotateX(90deg) translateZ(-600px);
+    border-radius: 20px;
+    filter: blur(20px);
+}
+/* Shadow */
+
+
+/* Garland_Red */
+.garland_red {
+    position: absolute;
+    top: 200px;
+    left: 110px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    animation: garland_red 2s linear infinite;
+}
+@keyframes garland_red {
+    0% {
+        background: hsl(120, 44%, 61%); 
+        filter: none; 
+        box-shadow: none;
+    }
+    25% {
+        background: hsl(0, 100%, 30%); 
+        filter: blur(3px); 
+        box-shadow: 0px 0px 100px hsl(0, 100%, 30%);
+    }
+    50% {
+        background: hsl(0, 88%, 40%); 
+        filter: blur(3px); 
+        box-shadow: 0px 0px 100px hsl(0, 88%, 40%);
+    }
+    75% {
+        background: hsl(0, 100%, 50%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(0, 100%, 50%);
+    }
+    100% {
+        background: hsl(0, 100%, 60%); 
+        filter: blur(3px); 
+        box-shadow: 0px 0px 100px hsl(0, 100%, 60%);
+    }
+}
+/* Garland_Red */
+
+/* Garland_Yellow */
+.garland_yellow {
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    animation: garland_yellow 2.5s linear infinite;
+}
+@keyframes garland_yellow {
+    0% {
+        background: hsl(120, 44%, 61%); 
+        filter: none; 
+        box-shadow: none;
+    }
+    25% {
+        background: hsl(50, 100%, 30%);
+        filter: blur(3px); 
+        box-shadow: 0px 0px 100px hsl(50, 100%, 30%);
+    }
+    50% {
+        background: hsl(60, 100%, 40%);
+        filter: blur(3px); 
+        box-shadow: 0px 0px 100px hsl(60, 100%, 40%);
+    }
+    75% {
+        background: hsl(70, 100%, 50%);
+        filter: blur(3px); 
+        box-shadow: 0px 0px 100px hsl(70, 100%, 50%);
+    }
+    100% {
+        background: hsl(60, 100%, 50%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(60, 100%, 50%);
+    }
+}
+/* Garland_Yellow */
+
+/* Garland_Blue */
+.garland_blue {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    animation: garland_blue 2s linear infinite;
+}
+@keyframes garland_blue {
+    0% {
+        background: hsl(120, 44%, 61%); 
+        filter: none; 
+        box-shadow: none;
+    }
+    25% {
+        background: hsl(230, 60%, 20%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(230, 60%, 20%);
+    }
+    50% {
+        background: hsl(240, 70%, 30%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(240, 70%, 30%);
+    }
+    75% {
+        background: hsl(250, 80%, 40%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(250, 80%, 50%);
+    }
+    100% {
+        background: hsl(260, 90%, 50%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(260, 90%, 50%);
+    }
+}
+/* Garland_Blue */
+
+/* Garland-Green */
+.garland_green {
+    position: absolute;
+    top: 200px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    animation: garland_green 2.5s linear infinite;
+}
+@keyframes garland_green {
+    0% {
+        background: hsl(120, 44%, 61%); 
+        filter: none; 
+        box-shadow: none;
+    }
+    25% {
+        background: hsl(120, 100%, 25%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(120, 100%, 25%);
+    }
+    50% {
+        background: hsl(120, 100%, 25%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(120, 100%, 25%);
+    }
+    75% {
+        background: hsl(120, 100%, 25%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(120, 100%, 25%);
+    }
+    100% {
+        background: hsl(120, 100%, 25%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(120, 100%, 25%);
+    }
+}
+/* Garland-Green */
+
+/* Garland-Puprle */
+.garland_puprle {
+    position: absolute;
+    top: 200px;
+    left: -50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    animation: garland_puprle 2s linear infinite;
+}
+@keyframes garland_puprle {
+    0% {
+        background: hsl(120, 44%, 61%);
+        filter: none; 
+        box-shadow: none;
+    }
+    25% {
+        background: hsl(300, 100%, 20%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(300, 100%, 20%);
+    }
+    50% {
+        background: hsl(300, 100%, 30%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(300, 100%, 30%);
+    }
+    75% {
+        background: hsl(300, 100%, 40%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(300, 100%, 40%);
+    }
+    100% {
+        background: hsl(300, 100%, 50%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(300, 100%, 50%);
+    }
+}
+/* Garland-Puprle */
+
+/* Garland- */
+.garland_white {
+    position: absolute;
+    top: 200px;
+    left: -90px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    animation: garland_white 2s linear infinite;
+}
+@keyframes garland_white {
+    0% {
+        background: hsl(120, 44%, 61%);
+        filter: none; 
+        box-shadow: none;
+    }
+    25% {
+        background: hsl(184, 100%, 80%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(184, 100%, 80%);
+    }
+    50% {
+        background: hsl(184, 100%, 70%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(184, 100%, 70%);
+    }
+    75% {
+        background: hsl(184, 100%, 60%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(184, 100%, 60%);
+    }
+    100% {
+        background: hsl(184, 100%, 50%);
+        filter: blur(3px);
+        box-shadow: 0px 0px 100px hsl(184, 100%, 50%);
+    }
+}
+
+/* Layer2 */
+.layer2 .garland_red {
+    left: 70px;   /*110px*/
+}
+.layer2 .garland_yellow {
+    left: 30px;   /*70px*/
+}
+.layer2 .garland_blue {
+    left: -10px;   /*30px*/
+}
+.layer2 .garland_green {
+    left: -50px;   /*-10px*/
+}
+.layer2 .garland_puprle {
+    left: -90px;   /*-50px*/
+} 
+.layer2 .garland_white {
+    left: 110px;  /*-90px*/
+}
+/* Layer2 */
+
+/* Layer3 */
+.layer3 .garland_red {
+    left: 30px;   /*110px*/
+}
+.layer3 .garland_yellow {
+    left: -10px;   /*70px*/
+}
+.layer3 .garland_blue {
+    left: -50px;   /*30px*/
+}
+.layer3 .garland_green {
+    left: -90px;   /*-10px*/
+}
+.layer3 .garland_puprle {
+    left: 110px;   /*-50px*/
+} 
+.layer3 .garland_white {
+    left: 70px;  /*-90px*/
+}
+/* Layer3 */
+
+/* Layer4 */
+.layer4 .garland_red {
+    left: -10px;   /*110px*/
+}
+.layer4 .garland_yellow {
+    left: -50px;   /*70px*/
+}
+.layer4 .garland_blue {
+    left: -90px;   /*30px*/
+}
+.layer4 .garland_green {
+    left: 110px;   /*-10px*/
+}
+.layer4 .garland_puprle {
+    left: 70px;   /*-50px*/
+} 
+.layer4 .garland_white {
+    left: 30px;  /*-90px*/
+}
+/* Layer4 */
+
+/* Layer5 */
+.layer5 .garland_red {
+    left: -50px;   /*110px*/
+}
+.layer5 .garland_yellow {
+    left: -90px;   /*70px*/
+}
+.layer5 .garland_blue {
+    left: 110px;   /*30px*/
+}
+.layer5 .garland_green {
+    left: 70px;   /*-10px*/
+}
+.layer5 .garland_puprle {
+    left: 30px;   /*-50px*/
+} 
+.layer5 .garland_white {
+    left: -10px;  /*-90px*/
+}
+/* Layer5 */
+
+/* Layer6 */
+.layer6 .garland_red {
+    left: -90px;   /*110px*/
+}
+.layer6 .garland_yellow {
+    left: 110px;   /*70px*/
+}
+.layer6 .garland_blue {
+    left: 70px;   /*30px*/
+}
+.layer6 .garland_green {
+    left: 30px;   /*-10px*/
+}
+.layer6 .garland_puprle {
+    left: -10px;   /*-50px*/
+} 
+.layer6 .garland_white {
+    left: -50px;  /*-90px*/
+}
+/* Layer6 */
+
+/* Layer7 */
+.layer7 .garland_red {
+    left: 110px;   /*110px*/
+}
+.layer7 .garland_yellow {
+    left: 70px;   /*70px*/
+}
+.layer7 .garland_blue {
+    left: 30px;   /*30px*/
+}
+.layer7 .garland_green {
+    left: -10px;   /*-10px*/
+}
+.layer7 .garland_puprle {
+    left: -50px;   /*-50px*/
+} 
+.layer7 .garland_white {
+    left: -90px;  /*-90px*/
+}
+/* Layer7 */
+
+
+
